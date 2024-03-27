@@ -6,7 +6,7 @@ public class JumlahHari2Beraksi {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Meminta input tahun
+        // masukkan inputan tahun
         System.out.print("Masukkan tahun: ");
         int tahun = 0;
         while (true) {
@@ -19,7 +19,7 @@ public class JumlahHari2Beraksi {
             }
         }
 
-        // Meminta input bulan
+        // masukkan inputan bulan
         System.out.print("Masukkan bulan: ");
         int bulan = 0;
         while (true) {
@@ -29,7 +29,7 @@ public class JumlahHari2Beraksi {
                     throw new IllegalArgumentException("Error! Masukkan bulan dari 1-12!");
                 break;
             } catch (NumberFormatException e) {
-                System.out.println("Error: Masukkan bulan dalam bentuk angka.");
+                System.out.println("Error! Masukkan bulan dalam bentuk angka!");
                 System.out.print("Masukkan bulan: ");
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
@@ -37,7 +37,7 @@ public class JumlahHari2Beraksi {
             }
         }
 
-        // Menghitung jumlah hari
+        // menghitung jumlah hari
         int jumlahHari = JumlahHari2.hitungHari(tahun, bulan);
         if (jumlahHari == -1)
             System.out.println("Error: Bulan tidak valid.");
