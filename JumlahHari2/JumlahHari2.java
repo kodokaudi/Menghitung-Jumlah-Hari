@@ -13,7 +13,7 @@ class JumlahHari2 {
                 else
                     return 28;
             default:
-                return -1; // Menunjukkan bulan tidak valid
+                return -1; // bulan tidak valid
         }
     }
 }
