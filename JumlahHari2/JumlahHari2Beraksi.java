@@ -14,7 +14,7 @@ public class JumlahHari2Beraksi {
                 tahun = Integer.parseInt(scanner.nextLine());
                 break;
             } catch (NumberFormatException e) {
-                System.out.println("Error: Masukkan tahun dalam bentuk angka!");
+                System.out.println("Error! Masukkan tahun dalam bentuk angka!");
                 System.out.print("Masukkan tahun: ");
             }
         }
